@@ -35,9 +35,9 @@ section h6 {
   --heading3-size: 1.3em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #4fa156;
-  --link-color-hover: #7dbf83;
-  --selection-background-color: #9fd0a4;
+  --link-color: #375239;
+  --link-color-hover: #568059;
+  --selection-background-color: #6c9c70;
   --selection-color: #fff; }
 
 .reveal-viewport {
@@ -52,12 +52,12 @@ section h6 {
 
 .reveal ::selection {
   color: #fff;
-  background: #9fd0a4;
+  background: #6c9c70;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: #9fd0a4;
+  background: #6c9c70;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -242,18 +242,18 @@ section h6 {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #4fa156;
+  color: #375239;
   text-decoration: none;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #7dbf83;
+  color: #568059;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #366e3b; }
+  background: #182419; }
 
 /*********************************************
  * Frame helper
@@ -266,21 +266,21 @@ section h6 {
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: #4fa156;
+  border-color: #375239;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #4fa156; }
+  color: #375239; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #4fa156; }
+  color: #375239; }
 
 /*********************************************
  * PRINT BACKGROUND
@@ -324,6 +324,13 @@ section h6 {
   width: 48%;
   text-align: right;
   padding-right: 2%; }
+  .part-title .title h1 {
+    padding-top: 20%; }
 
 .part-title .image {
-  width: 40%; }
+  width: 38%;
+  padding-left: 2%; }
+
+.source {
+  font-size: 0.6em;
+  text-align: center; }

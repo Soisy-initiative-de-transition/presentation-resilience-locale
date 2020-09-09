@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>La résilience locale : enjeux et avantages</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap&family=Amatic+SC&display=swap&family=Roboto+Slab:wght@300;600"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>La résilience locale</h1>
+          <p>Enjeux et avantages</p>
+        </section>
+        <section
+          class="quote"
+          style="font-size: 25px"
+          data-markdown="slides/01-intro.md"
+          data-separator="^\n\n\n"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Note:"
+        ></section>
+        <section
+          style="font-size: 25px"
+          data-markdown="slides/02-problemes.md"
+          data-separator="^\n\n\n"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Note:"
+        ></section>
+
+        <section class="part-title">
+          <div class="title">
+            <h1>Le pétrole</h1>
+            <p>et le pic pétrolier</p>
+          </div>
+          <div class="image">TODO</div>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

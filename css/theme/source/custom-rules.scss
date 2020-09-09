@@ -1,0 +1,53 @@
+$headingColor: #4fa156;
+
+.reveal .quote {
+  font-family: 'Bad Script', cursive;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.reveal .quote:before,
+.reveal .quote:after {
+  content: '"';
+  position: absolute;
+  font-size: 250px;
+  color: $headingColor;
+}
+
+.reveal .quote:before {
+  left: -10%;
+  top: 0;
+}
+
+.reveal .quote:after {
+  right: -5%;
+}
+
+.reveal .author {
+  text-align: right;
+  font-family: 'Roboto Slab', serif;
+  color: $headingColor;
+}
+
+/* Parts */
+.part-title {
+  background: linear-gradient(
+    90deg,
+    white 50%,
+    $headingColor 50%,
+    $headingColor 100%
+  );
+}
+.part-title div {
+  float: left;
+}
+
+.part-title .title {
+  width: 48%;
+  text-align: right;
+  padding-right: 2%;
+}
+
+.part-title .image {
+  width: 40%;
+}

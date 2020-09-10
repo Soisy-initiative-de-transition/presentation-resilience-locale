@@ -309,6 +309,7 @@ section h6 {
   right: -5%; }
 
 .reveal .author {
+  font-size: 25px;
   text-align: right;
   font-family: 'Roboto Slab', serif;
   color: #4fa156; }

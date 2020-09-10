@@ -4,7 +4,8 @@ nous disposons de toutes les commodités mais de moins de temps.
 Nous avons plus de diplômes, mais moins de bon sens; plus de connaissances, mais moins de jugement;  
 plus d'experts, mais de plus en plus de problèmes; plus de médicaments, mais moins de santé.
 
-Nous sommes allés sur la Lune et nous en sommes revenus, mais nous avons du mal à traverser la rue pour rencontrer notre nouveau voisin.
+Nous sommes allés sur la Lune et nous en sommes revenus,  
+mais nous avons du mal à traverser la rue pour rencontrer notre nouveau voisin.
 
 Nous multiplions les appareils de communication, mais avons moins de communication réelle.
 

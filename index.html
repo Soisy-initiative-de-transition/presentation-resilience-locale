@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
     <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
+
+    <!-- Material design -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
     <div class="reveal">
@@ -436,15 +446,165 @@
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
+
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        slideNumber: true,
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealNotes],
       });
+    </script>
+
+    <!-- Issue creator -->
+    <button
+      id="suggestion-button"
+      class="js-modal button js-modal-toggler"
+      aria-haspopup="dialog"
+      title="Proposer une modification"
+    >
+      <span>Proposer une modification</span>
+    </button>
+
+    <span
+      id="js-modal-overlay"
+      class="simple-modal-overlay js-modal-toggler"
+      title="Fermer cette fenêtre"
+      hidden
+    >
+      <span hidden>Fermer cette fenêtre</span>
+    </span>
+
+    <dialog
+      id="js-modal"
+      class="simple-modal"
+      role="dialog"
+      aria-labelledby="modal-title"
+      hidden
+    >
+      <form id="suggestion-form" class="simple-modal__content card">
+        <div role="document" class="simple-modal__wrapper card-content row">
+          <h1 id="modal-title" class="simple-modal-title card-title">
+            Proposer une modification
+          </h1>
+
+          <div class="input-field col s6">
+            <input id="name-field" type="text" required />
+            <label for="name-field">Votre nom</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="email-field" type="email" />
+            <label for="email-field">Votre e-mail</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea
+              id="comment-field"
+              name="comment"
+              class="materialize-textarea"
+              required
+            ></textarea>
+            <label for="comment-field"
+              >Dites-nous ce que vous aimeriez changer dans cette page</label
+            >
+          </div>
+        </div>
+        <div class="card-action">
+          <button class="waves-effect waves-light btn disabled" type="submit">
+            Envoyer ma suggestion
+          </button>
+          <button
+            type="button"
+            class="js-modal-close js-modal-toggler waves-effect waves-teal btn-flat"
+            id="js-modal-close"
+            title="Fermer cette fenêtre"
+            data-content-back-id=""
+          >
+            En fait non !
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module">
+      import { Octokit } from 'https://cdn.skypack.dev/@octokit/core';
+      const owner = 'Soisy-initiative-de-transition';
+      const repo = 'presentation-resilience-locale';
+      const octokit = new Octokit({
+        auth: 'ed1a7743898618bb83cbc983fade885cebbbe170',
+      });
+
+      const modal = document.getElementById('js-modal');
+      const overlay = document.getElementById('js-modal-overlay');
+      const submitButton = document.querySelector('#suggestion-form button');
+      const nameField = document.getElementById('name-field');
+      const emailField = document.getElementById('email-field');
+      const textArea = document.getElementById('comment-field');
+
+      // Listen to text change to enable form validation
+      textArea.addEventListener('input', handleInputChange);
+      nameField.addEventListener('input', handleInputChange);
+
+      async function createIssue(title, body) {
+        const response = await octokit.request(
+          'POST /repos/{owner}/{repo}/issues',
+          { owner, repo, title, body }
+        );
+        // if (response.url) {
+        //   console.log('URL du ticket créé', url);
+        // } else {
+        //   console.log('hum… fail ?', response);
+        // }
+      }
+
+      function handleInputChange(event) {
+        const valid =
+          textArea.value.trim().length > 0 && nameField.value.trim().length > 0;
+        if (submitButton.classList.contains('disabled') && valid) {
+          submitButton.classList.remove('disabled');
+        } else if (!submitButton.classList.contains('disabled') && !valid) {
+          submitButton.classList.add('disabled');
+        }
+      }
+
+      function handleSuggestion() {
+        submitButton.addEventListener('click', function (event) {
+          event.preventDefault();
+          const text = textArea.value.trim();
+          const name = nameField.value.trim();
+          const email = emailField.value.trim();
+          if (text) {
+            const title = Reveal.getCurrentSlide().querySelector('h1')
+              .textContent;
+            createIssue(
+              `Slide ${title} | suggestion de ${name} (${
+                email || 'aucun email transmis'
+              })`,
+              text
+            );
+            overlay.toggleAttribute('hidden');
+            modal.toggleAttribute('hidden');
+            textArea.value = '';
+            nameField.value = '';
+            emailField.value = '';
+          }
+        });
+      }
+
+      function toggleDialog() {
+        const togglers = document.querySelectorAll('.js-modal-toggler');
+        for (const toggler of togglers) {
+          toggler.addEventListener('click', function () {
+            overlay.toggleAttribute('hidden');
+            modal.toggleAttribute('hidden');
+          });
+        }
+      }
+
+      toggleDialog();
+      handleSuggestion();
     </script>
   </body>
 </html>

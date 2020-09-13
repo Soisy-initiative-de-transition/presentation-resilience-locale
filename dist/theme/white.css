@@ -353,3 +353,102 @@ section {
 .source {
   font-size: 0.6em;
   text-align: center; }
+
+[hidden] {
+  display: none; }
+
+dialog {
+  display: block;
+  border: 0; }
+
+/* removes scroll when modal is opened */
+.no-scroll {
+  overflow: hidden; }
+
+#modal-title {
+  margin-top: 0; }
+
+/* overlay covers everything */
+.simple-modal-overlay,
+.simple-animated-modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0.8;
+  z-index: 666;
+  cursor: pointer; }
+
+.simple-modal-overlay[data-background-click='disabled'],
+.simple-animated-modal-overlay[data-background-click='disabled'] {
+  cursor: auto; }
+
+.simple-animated-modal-overlay {
+  animation: fadewhite ease 0.5s 1 normal; }
+
+@keyframes fadewhite {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.8; } }
+
+/* modal */
+.simple-modal,
+.simple-animated-modal {
+  position: fixed !important;
+  left: 15%;
+  top: 5%;
+  width: 70%;
+  max-height: 98vh;
+  z-index: 667;
+  right: auto;
+  overflow: auto; }
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    width: 0;
+    left: 50%; }
+  100% {
+    opacity: 1;
+    max-height: 100%;
+    width: 70%;
+    left: 15%; } }
+
+/* it can be easily adapted in media-queries for tablets/mobile */
+/* for this example: tablets */
+@media (max-width: 55.625em) {
+  .simple-modal,
+  .simple-animated-modal {
+    left: 5%;
+    top: 5%;
+    height: 90%;
+    width: 90%; } }
+
+/* for this example: mobile */
+@media (max-width: 44.375em) {
+  .simple-modal,
+  .simple-animated-modal {
+    left: 1%;
+    top: 1%;
+    width: 98%;
+    height: 98%; } }
+
+#suggestion-button {
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  width: 50px;
+  height: 45px;
+  background-image: url("../../../images/comment-icon.png");
+  background-size: 50px 45px;
+  background-color: white;
+  border: none; }
+  #suggestion-button span {
+    display: none; }
+
+#suggestion-form .card-content {
+  padding-bottom: 0; }

@@ -354,6 +354,9 @@ section {
   font-size: 0.6em;
   text-align: center; }
 
+.reveal ul:not(.browser-default) > li::before {
+  content: '- '; }
+
 [hidden] {
   display: none; }
 

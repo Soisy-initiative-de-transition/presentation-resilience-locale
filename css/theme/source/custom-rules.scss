@@ -92,3 +92,7 @@ $headingColor: #4fa156;
   font-size: 0.6em;
   text-align: center;
 }
+
+.reveal ul:not(.browser-default) > li::before {
+  content: '- ';
+}

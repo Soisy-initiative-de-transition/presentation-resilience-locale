@@ -96,3 +96,22 @@ $headingColor: #4fa156;
 .reveal ul:not(.browser-default) > li::before {
   content: '- ';
 }
+
+.reveal {
+  .left-block {
+    float: left;
+    width: 60%;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .right-block {
+    float: left;
+    width: 38%;
+    margin-left: 2%;
+  }
+
+  .article::after {
+    clear: both;
+  }
+}

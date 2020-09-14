@@ -357,6 +357,20 @@ section {
 .reveal ul:not(.browser-default) > li::before {
   content: '- '; }
 
+.reveal .left-block {
+  float: left;
+  width: 60%;
+  font-size: 25px;
+  text-align: left; }
+
+.reveal .right-block {
+  float: left;
+  width: 38%;
+  margin-left: 2%; }
+
+.reveal .article::after {
+  clear: both; }
+
 [hidden] {
   display: none; }
 

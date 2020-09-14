@@ -115,3 +115,12 @@ $headingColor: #4fa156;
     clear: both;
   }
 }
+
+.reveal a {
+  color: $headingColor;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

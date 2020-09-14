@@ -76,3 +76,8 @@
 
 .reveal .article::after {
   clear: both; }
+
+.reveal a {
+  color: #4fa156; }
+  .reveal a:hover, .reveal a:focus {
+    text-decoration: underline; }

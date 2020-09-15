@@ -8,4 +8,4 @@
   - 60% des populations d'animaux sauvages perdues en 40 ans
   - depuis 1970, la taille des populations de vertébrés sauvages a décliné de 68%
 
-<p class="source">(source : <a href="https://www.wwf.fr/rapport-planete-vivante">www.wwf.fr/rapport-planete-vivante</a></p>
+<p class="source">(source : <a href="https://www.wwf.fr/rapport-planete-vivante">www.wwf.fr/rapport-planete-vivante</a>)</p>

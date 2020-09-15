@@ -7,7 +7,7 @@
     <p>Un cocktail mortel pour les poissons.</p>
   </div>
   <div class="right-block">
-    <img src="./images/poissons-morts-enghiens-08-2020.png" alt="Vision de nombreux poissons morts en surface dans le lac" />
+    <img src="../../images/poissons-morts-enghiens-08-2020.png" alt="Vision de nombreux poissons morts en surface dans le lac" />
   </div>
 
 </div>

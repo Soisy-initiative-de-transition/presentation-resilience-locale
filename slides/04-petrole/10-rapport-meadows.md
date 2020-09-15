@@ -11,4 +11,4 @@
   - capital industriel global,
   - niveau de pollution,
   - etc.
-- Des projections troublantes une fois confrontées à la réalité
+- [Des projections troublantes une fois confrontées à la réalité](https://jancovici.com/recension-de-lectures/societes/rapport-du-club-de-rome-the-limits-of-growth-1972/)

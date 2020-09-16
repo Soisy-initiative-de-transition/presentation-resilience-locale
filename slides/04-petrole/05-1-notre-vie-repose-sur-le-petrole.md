@@ -1,0 +1,3 @@
+# Aujourd'hui notre vie repose sur…
+
+![L’eau, l'alimentation, le transport, le textile, l'agriculture, le travail, la gestion de nos déchets, les loisirs, …](../../images/notre-vie-repose-sur-1.png)

@@ -6,6 +6,6 @@
   - Organiser une projection d'information locale
 - [Enquête de sens, le Film](https://enquetedesens-lefilm.com/)
   - Organiser une projection d'information locale
-- Plutôt que ville fleurie, créons un label "Ville Garnie" (4 courgettes )
+- Plutôt que ville fleurie, créons un label "Ville Garnie" (fruits, légumes, insectes, animaux)
   - Dessinons sur l'asphalte, sur les murs, dans les écoles
   - Affichons les dessins des enfants partout, des immeubles aux parcs

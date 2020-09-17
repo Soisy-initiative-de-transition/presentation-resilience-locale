@@ -6,3 +6,5 @@
   - les bio-carburants
 - Autre problème : le réchauffement climatique
   - centrales nucléaires à l'arrêt
+
+Note: A 16h, le mercredi 16 septembre, 25 des 56 réacteurs nucléaires FR sont à l'arrêt (carénage, maintenance, pannes, sécheresse).

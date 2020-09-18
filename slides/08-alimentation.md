@@ -2,7 +2,7 @@
 
 - Réapprendre à cultiver
   - à l'école
-  - avec des ateliers communautaires
+  - avec des ateliers collectifs
 - Utiliser les zones cultivables disponibles
   - au pied des immeubles
   - dans les cours d'écoles

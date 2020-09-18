@@ -4,7 +4,7 @@
   - alimentation : produire localement
   - énergie : réduire la consommation, produire localement, limiter les importations
   - finance : amoindrir les conséquences d'un effondrement des systèmes financiers
-  - « bonheur » : tirer partie des petites choses autour de nous, recréer de l'interaction sociale, savoir régler les conflits - de manière autonome et communautaire
+  - « bonheur » : tirer partie des petites choses autour de nous, recréer de l'interaction sociale, savoir régler les conflits - de manière autonome et ensemble
 - Favorise tout un tas de choses :
   - activités, emplois locaux
   - interactions sociales plus nombreuses et variées (inter-générationelles et pluri-culturelles)

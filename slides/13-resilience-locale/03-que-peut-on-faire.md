@@ -1,8 +1,10 @@
 # Que peut-on faire localement ?
 
 - Jardiner
-  - dans nos jardins,
+  - dans nos jardins
   - aux pieds des immeubles
+  - sur nos balcons
+  - en pot en intérieur
   - dans des toutes les zones disponibles, en trouvant des accords (mairie, propriétaires…)
 - S'entraider
   - partager du matériel

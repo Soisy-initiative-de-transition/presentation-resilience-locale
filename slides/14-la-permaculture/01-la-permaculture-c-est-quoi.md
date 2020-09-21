@@ -8,7 +8,7 @@ Les 12 principes de David Holmgren
 - Appliquer l’autorégulation et accepter à la rétroaction
 - Utiliser et valoriser les ressources et les services renouvelables
 - Ne produire aucun déchet
-- La conception, des grandes structures au détails (design from pattern to details : La conception, des motifs aux détails)
+- La conception, des grandes structures au détails
 - Intégrer au lieu de séparer
 - Utiliser des solutions lentes et à petite échelle
 - Se servir de la diversité et la valoriser

@@ -1,6 +1,6 @@
 # L'eau : un sujet délicat
 
-- Nous consommons X litres d'eau potable par jour par habitant
+- Nous consommons 148 litres d'eau potable par jour par habitant
 - 99 litres sur 100 ne servent pas à boire : toilettes, lessive, vaisselle, douche, arrosage
 - Le retraitement des eaux est basé sur l'énergie
 - Stocker

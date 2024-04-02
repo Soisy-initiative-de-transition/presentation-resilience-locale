@@ -1,5 +1,5 @@
 # Notre consommation journalière
 
-![Chaque jour nous dépensons l'équivalent de 2 cuillières à soupe de pétrole, ce qui représente 50 personnes pédalant sans arrêt pendant 24h](../../images/consommation-journaliere.png)
+![1 canette de pétrole équivaut à 5 personnes pédalant sans arrêt pendant 1h](../../images/consommation-petrole.png)
 
-Note: Chaque jour nous dépensons l'équivalent de 2 cuillières à soupe de pétrole, ce qui représente 50 personnes pédalant sans arrêt pendant 24h
+Note: Chaque jour nous dépensons 4 à 5kWh, soit l'énergie équivalente à plus de 400 esclaves énergétiques
